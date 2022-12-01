@@ -31,7 +31,7 @@ public class GetMatchListByAccountId extends MatchApiMethod {
 		super(config);
 		setPlatform(platform);
 		setReturnType(MatchList.class);
-		setUrlBase(platform.getHost() + "/lol/match/v4/matchlists/by-account/" + accountId);
+		setUrlBase(platform.getHost() + "/lol/match/v5/matchlists/by-account/" + accountId);
 		if (champion != null) {
 			for (int param : champion) {
 				add(new UrlParameter("champion", param));

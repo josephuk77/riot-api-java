@@ -28,7 +28,7 @@ public class GetMatch extends MatchApiMethod {
 		super(config);
 		setPlatform(platform);
 		setReturnType(Match.class);
-		setUrlBase(platform.getHost() + "/lol/match/v4/matches/" + matchId);
+		setUrlBase(platform.getHost() + "/lol/match/v5/matches/" + matchId);
 		if (forAccountId != null && !forAccountId.isEmpty()) {
 			add(new UrlParameter("forAccountId", forAccountId));
 		}
